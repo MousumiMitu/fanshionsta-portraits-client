@@ -1,0 +1,8 @@
+.sidebar {
+  background-image: linear-gradient(40deg, #e00909, #e90a8cfa);
+  position: fixed;
+  left: 0;
+}
+.sidebar ul li {
+  margin: 10px 0;
+}

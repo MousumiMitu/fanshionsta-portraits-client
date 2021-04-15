@@ -1,0 +1,126 @@
+.slider-box {
+  position: relative;
+  height: 570px;
+  overflow: hidden;
+}
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slide-img {
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: zoom-out 8s linear infinite;
+}
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+.text-box {
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(80, 77, 77);
+  /* border: 1px solid red; */
+}
+.text-box span {
+  background-color: brown;
+  height: 1px;
+  width: 150px;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+}
+.slider1 {
+  animation: slide1 15s linear infinite;
+}
+.slider2 {
+  animation: slide2 15s linear infinite;
+}
+.slider3 {
+  animation: slide3 15s linear infinite;
+}
+.slider4 {
+  animation: slide4 15s linear infinite;
+}
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
