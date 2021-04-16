@@ -7,8 +7,8 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 const ServiceList = ({ service }) => {
   const { name, img, price, _id } = service;
   const history = useHistory();
-  const handleBooking = (serviceId) => {
-    const url = `/service/${serviceId}`;
+  const handleBooking = (orderId) => {
+    const url = `/bookingCheckOut/${orderId}`;
     history.push(url);
   };
   return (

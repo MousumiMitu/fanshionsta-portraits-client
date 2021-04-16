@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
+import BookingCheckOut from "../BookingCheckOut/BookingCheckOut";
 import Navbar from "../Navbar/Navbar";
 import "./ServiceBooking.css";
 
 const ServiceBooking = () => {
   let { serviceId } = useParams();
   const [service, setService] = useState({});
-  const { name, img, price } = service;
+
+  const { name, img, price, _id } = service;
+  // console.log(_id, price);
+  const history = useHistory();
+  const handleBookingCheckOut = (orderId) => {
+    console.log(orderId);
+    const url = `/bookingCheckOut/${orderId}`;
+    console.log(url);
+    history.push(url);
+  };
 
   useEffect(() => {
     fetch("http://localhost:5000/service/" + serviceId)
@@ -16,8 +26,8 @@ const ServiceBooking = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
-      <div className="container">
+      {/* <Navbar></Navbar>
+      <div className="container ">
         <h2>Your Booking item</h2>
         <div className="col-md-8 d-flex justify-content-center align-items-center order-box my-5">
           <div className="img-box">
@@ -28,8 +38,12 @@ const ServiceBooking = () => {
             <p>${price}</p>
           </div>
         </div>
-        <div className="col-md-4"></div>
-      </div>
+        <div className="col-md-4">
+          <button onclick={() => handleBookingCheckOut(_id)}>
+            add to card
+          </button>
+        </div>
+      </div> */}
     </div>
   );
 };
