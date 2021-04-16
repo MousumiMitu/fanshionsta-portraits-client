@@ -48,7 +48,10 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to="/manageServices"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <FontAwesomeIcon icon={faThLarge} className="order-icon me-2" />
             Manage Services
           </Link>

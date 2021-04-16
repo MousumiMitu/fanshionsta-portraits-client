@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../About/About";
 import HeaderMain from "../HeaderMain/HeaderMain";
 import Navbar from "../Navbar/Navbar";
 
@@ -9,6 +10,7 @@ const Header = () => {
     <div>
       <Navbar></Navbar>
       <HeaderMain></HeaderMain>
+      <About></About>
       <Services></Services>
     </div>
   );

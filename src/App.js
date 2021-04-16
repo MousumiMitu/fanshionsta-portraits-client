@@ -9,6 +9,7 @@ import { createContext, useState } from "react";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import BookingCheckOut from "./Components/Home/BookingCheckOut/BookingCheckOut";
 import BookingStatus from "./Components/DashBoard/BookingStatus/BookingStatus";
+import ManageServices from "./Components/DashBoard/ManageServices/ManageServices";
 
 export const UserContext = createContext();
 
@@ -19,11 +20,11 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
-          <Route path="/dashboard">
-            <DashBoard />
-          </Route>
           <Route path="/addService">
             <AddService />
+          </Route>
+          <Route path="/manageServices">
+            <ManageServices />
           </Route>
           <PrivateRoute path="/bookingCheckOut/:orderId">
             <BookingCheckOut />

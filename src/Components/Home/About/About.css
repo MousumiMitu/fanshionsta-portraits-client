@@ -1,0 +1,49 @@
+.profile-box {
+  height: 30rem;
+
+  margin: 7rem auto;
+  padding: 1rem 2rem;
+}
+.profile-img {
+  width: 40%;
+  height: 28rem;
+  background: linear-gradient(180deg, #ee8aa3ce, #f578bbdc);
+}
+.profile-img img {
+  height: 100%;
+  transform: translateX(2.5rem);
+  transform: rotate(351deg);
+  transition: 0.5s ease;
+}
+.profile-img img:hover {
+  transform: rotate(349deg);
+}
+.content-box {
+  width: 40%;
+  position: relative;
+}
+.content-box h6 {
+  font-family: "Ubuntu Mono", monospace;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: rgb(79, 1, 82);
+}
+.content-box h2 {
+  font-family: "Orelega One", cursive;
+}
+.content-box .sign {
+  font-family: "Beth Ellen", cursive;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.content-box span {
+  background-color: #64033c;
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+}
+.content-box p {
+  color: rgb(155, 152, 152);
+}

@@ -1,0 +1,11 @@
+.service-container {
+  height: 53em;
+  /* border: 1px solid red; */
+  background-image: url("../../../images/bg6.jpg");
+  background-position: center;
+}
+.overlay {
+  background-color: rgba(243, 178, 210, 0.459);
+  height: 100%;
+  /* transform: translateY(-1rem); */
+}

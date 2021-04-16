@@ -2,6 +2,7 @@
   position: relative;
   height: 570px;
   overflow: hidden;
+  background-color: rgba(70, 15, 2, 0.315);
 }
 .slider1,
 .slider2,
@@ -20,7 +21,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  animation: zoom-out 8s linear infinite;
+  animation: zoom-out 10s linear infinite;
 }
 @keyframes zoom-out {
   100% {
@@ -37,12 +38,17 @@
   /* border: 1px solid red; */
 }
 .text-box span {
-  background-color: brown;
-  height: 1px;
-  width: 150px;
+  background-color: rgb(87, 2, 80);
+  height: 2px;
+  width: 100px;
   margin-top: 10px;
   position: absolute;
-  left: 0;
+  margin-left: 20px;
+  left: 0px;
+}
+.text-box h3 {
+  color: white;
+  font-family: "Beth Ellen", cursive;
 }
 .slider1 {
   animation: slide1 15s linear infinite;
