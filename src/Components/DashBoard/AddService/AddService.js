@@ -49,8 +49,8 @@ const AddService = () => {
     <section className="container-fluid row">
       <Sidebar></Sidebar>
       <div
-        className="col-md-8 p-4 pr-5"
-        style={{ position: "absolute", right: "6rem", border: "1px solid red" }}
+        className="col-md-8 col-sm-7 col-7 p-4 pr-5"
+        style={{ position: "absolute", right: "6rem" }}
       >
         <h2>Add a service</h2>
         <form onSubmit={handleSubmit}>

@@ -21,6 +21,7 @@ const BookingCheckOut = () => {
       ...loggedInUser,
       name,
       price,
+      img,
       orderTime: new Date().toDateString("dd,mm,yyyy"),
       paymentId,
       status: "processing",
@@ -43,7 +44,7 @@ const BookingCheckOut = () => {
     <section className="container-fluid row d-flex justify-content-evenly">
       <Sidebar></Sidebar>
       <div
-        className="col-md-6 p-4 pr-5"
+        className="col-md-6 col-sm-6 col-6 p-4 pr-5"
         style={{ position: "absolute", border: "1px solid red" }}
       >
         <h4>Book</h4>

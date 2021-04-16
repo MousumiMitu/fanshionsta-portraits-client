@@ -16,7 +16,7 @@ import {
 const Sidebar = () => {
   return (
     <div
-      className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4"
+      className="sidebar d-flex flex-column justify-content-between col-md-2 col-sm-3 col-3 py-5 px-4"
       style={{ height: "100vh" }}
     >
       <ul className="list-unstyled">
@@ -54,7 +54,10 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to="/bookingCheckOut/:orderId"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <FontAwesomeIcon
               icon={faShoppingCart}
               className="order-icon me-2"
@@ -63,7 +66,10 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to="/bookingStatus"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <FontAwesomeIcon icon={faList} className="order-icon me-2" />
             Booking lists
           </Link>

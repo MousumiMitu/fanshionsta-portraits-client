@@ -8,6 +8,7 @@ import ServiceBooking from "./Components/Home/ServiceBooking/ServiceBooking";
 import { createContext, useState } from "react";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import BookingCheckOut from "./Components/Home/BookingCheckOut/BookingCheckOut";
+import BookingStatus from "./Components/DashBoard/BookingStatus/BookingStatus";
 
 export const UserContext = createContext();
 
@@ -27,7 +28,9 @@ function App() {
           <PrivateRoute path="/bookingCheckOut/:orderId">
             <BookingCheckOut />
           </PrivateRoute>
-
+          <PrivateRoute path="/bookingStatus">
+            <BookingStatus />
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
