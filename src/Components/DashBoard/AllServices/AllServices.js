@@ -8,7 +8,7 @@ const AllServices = ({ service }) => {
   const { name, price, img, _id } = service;
   const history = useHistory();
   const handleDeleteProduct = (id) => {
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://safe-atoll-71815.herokuapp.com/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",

@@ -1,0 +1,40 @@
+.work-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  position: relative;
+}
+.gallery-box {
+  position: relative;
+  column-count: 4;
+  padding: 15px;
+}
+.gallery-img {
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  width: 110%;
+  transition: 0.5s ease;
+}
+.gallery-img:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-box {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 425px) {
+  .gallery-box {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 375px) {
+  .gallery-box {
+    column-count: 1;
+  }
+}

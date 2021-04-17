@@ -11,7 +11,7 @@ const BookingCheckOut = () => {
   const { name, img, price, _id } = service;
 
   useEffect(() => {
-    fetch("http://localhost:5000/service/" + orderId)
+    fetch("https://safe-atoll-71815.herokuapp.com/service/" + orderId)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, [orderId]);
@@ -27,7 +27,7 @@ const BookingCheckOut = () => {
       status: "processing",
     };
 
-    fetch("http://localhost:5000/addBooking", {
+    fetch("https://safe-atoll-71815.herokuapp.com/addBooking", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

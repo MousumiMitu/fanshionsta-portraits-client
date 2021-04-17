@@ -6,9 +6,13 @@ import "./BookingStatus.css";
 const BookingStatus = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [bookings, setBookings] = useState([]);
-
+  const email = loggedInUser.email;
   useEffect(() => {
-    fetch("http://localhost:5000/bookings?email=" + loggedInUser.email)
+    fetch("https://safe-atoll-71815.herokuapp.com/bookingAppointments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    })
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);

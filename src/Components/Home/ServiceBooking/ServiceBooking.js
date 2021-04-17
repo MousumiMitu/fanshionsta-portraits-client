@@ -19,7 +19,7 @@ const ServiceBooking = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/service/" + serviceId)
+    fetch("https://safe-atoll-71815.herokuapp.com/service/" + serviceId)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, [serviceId]);

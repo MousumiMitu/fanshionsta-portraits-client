@@ -34,7 +34,7 @@ const AddService = () => {
       img: imageFile,
     };
 
-    const url = `http://localhost:5000/addService`;
+    const url = `https://safe-atoll-71815.herokuapp.com/addService`;
 
     fetch(url, {
       method: "POST",
