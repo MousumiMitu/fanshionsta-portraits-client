@@ -49,40 +49,37 @@ const AddService = () => {
     <section className="container-fluid row">
       <Sidebar></Sidebar>
       <div
-        className="col-md-8 col-sm-7 col-7 p-4 pr-5"
+        className="col-md-8 col-sm-7 col-6 p-4 pr-5"
         style={{ position: "absolute", right: "6rem" }}
       >
         <h2>Add a service</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group my-3">
+          <div className=" my-3">
             <input
               onBlur={handleBlur}
               type="text"
-              className="form-control"
               name="name"
               placeholder="Add service"
             />
           </div>
-          <div className="form-group my-3">
+          <div className=" my-3">
             <input
               onBlur={handleBlur}
               type="number"
-              className="form-control"
+              className=""
               name="price"
               placeholder="add price"
             />
           </div>
-          <div className="form-group my-3">
+          <div className=" my-3">
             <input
               onChange={handleFileChange}
               type="file"
-              className="form-control"
+              className=""
               placeholder="picture"
             />
           </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
+          <input type="submit" />
         </form>
       </div>
     </section>

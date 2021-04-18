@@ -17,7 +17,7 @@ const Navbar = () => {
             fontFamily: '"Beth Ellen", cursive',
           }}
         >
-          Mitz Creation
+          Fashionista Portraits
         </a>
         <button
           class="navbar-toggler"

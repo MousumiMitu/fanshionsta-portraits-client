@@ -6,6 +6,10 @@
   height: 200px;
   position: relative;
 }
+.booking-box {
+  display: flex;
+  justify-content: space-between;
+}
 .order-btn {
   position: absolute;
   right: 0;
@@ -19,4 +23,25 @@
 .order-img {
   width: 22%;
   border-radius: 5%;
+}
+@media (max-width: 598px) {
+  .booking-card {
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 250px;
+  }
+  .booking-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .order-img {
+    width: 50%;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .booking-text {
+    display: none;
+  }
 }

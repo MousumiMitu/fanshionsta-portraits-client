@@ -29,9 +29,9 @@
   }
 }
 .text-box {
-  width: 300px;
+  width: 400px;
   position: absolute;
-  top: 200px;
+  top: 12rem;
   left: 50%;
   transform: translateX(-50%);
   color: rgb(80, 77, 77);
@@ -128,5 +128,25 @@
   }
   100% {
     visibility: visible;
+  }
+}
+
+@media (max-width: 598px) {
+  .slider-box {
+    position: relative;
+    height: 250px;
+  }
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4 {
+    transform: translateY(-5rem);
+  }
+  .text-box {
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(80, 77, 77);
   }
 }

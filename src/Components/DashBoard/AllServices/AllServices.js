@@ -10,14 +10,7 @@ const AllServices = ({ service }) => {
   const handleDeleteProduct = (id) => {
     fetch(`https://safe-atoll-71815.herokuapp.com/delete/${id}`, {
       method: "DELETE",
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((res) => res.json())
-      .then((result) => {
-        history.push("/delete");
-      });
+    });
   };
   return (
     <div

@@ -28,7 +28,7 @@ const BookingStatus = () => {
               <div style={{ height: "40px" }}>
                 <button className="order-btn">{booking.status}</button>
               </div>
-              <div className="d-flex justify-content-evenly p-2">
+              <div className="booking-box p-2">
                 <img
                   src={booking.img}
                   className="img-fluid order-img "
@@ -36,7 +36,7 @@ const BookingStatus = () => {
                 />
                 <div className="ms-3">
                   <h5>{booking.name}</h5>
-                  <p>
+                  <p className="booking-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Temporibus, maxime.
                   </p>

@@ -9,7 +9,7 @@ const ManageServices = () => {
     fetch("https://safe-atoll-71815.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => SetServices(data));
-  }, []);
+  });
 
   return (
     <section className="container-fluid row d-flex justify-content-evenly">

@@ -45,7 +45,11 @@ const BookingCheckOut = () => {
       <Sidebar></Sidebar>
       <div
         className="col-md-6 col-sm-6 col-6 p-4 pr-5"
-        style={{ position: "absolute", border: "1px solid red" }}
+        style={{
+          position: "absolute",
+
+          marginLeft: "5rem",
+        }}
       >
         <h4>Book</h4>
         <form>
@@ -60,7 +64,7 @@ const BookingCheckOut = () => {
           <div className="form-group my-3">
             <input
               type="email"
-              className="form-control"
+              className="form-control "
               name="email"
               placeholder={loggedInUser.email}
             />

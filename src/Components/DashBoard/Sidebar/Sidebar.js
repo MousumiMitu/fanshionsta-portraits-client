@@ -30,10 +30,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div
-      className="sidebar d-flex flex-column justify-content-between col-md-2 col-sm-3 col-3 py-5 px-4"
-      style={{ height: "100vh" }}
-    >
+    <div className="sidebar d-flex flex-column justify-content-between col-md-2 col-sm-3 col-3 py-5 px-4">
       <ul className="list-unstyled">
         <li>
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
@@ -53,9 +50,12 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <Link
+                to="/updateStatus"
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <FontAwesomeIcon icon={faBoxes} className="order-icon me-2" />
-                Order lists
+                Update Status
               </Link>
             </li>
             <li>

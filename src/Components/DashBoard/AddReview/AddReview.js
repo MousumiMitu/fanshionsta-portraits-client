@@ -35,7 +35,7 @@ const AddReview = () => {
       <Sidebar></Sidebar>
       <div className="col-md-9 col-sm-7 col-7 p-4  ms-auto">
         <form onSubmit={handleSubmit}>
-          <div style={{ border: "1px solid red", width: "30rem" }}>
+          <div style={{ width: "30rem" }}>
             <div className="form-group my-3">
               <input
                 type="text"

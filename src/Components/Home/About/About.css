@@ -1,8 +1,11 @@
 .profile-box {
-  height: 30rem;
-
+  /* height: 30rem; */
   margin: 7rem auto;
   padding: 1rem 2rem;
+}
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 .profile-img {
   width: 40%;
@@ -46,4 +49,29 @@
 }
 .content-box p {
   color: rgb(155, 152, 152);
+}
+
+@media (max-width: 598px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-img {
+    width: 90%;
+    margin: 0 auto;
+    height: 20rem;
+  }
+  .content-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .content-box p {
+    text-align: justify;
+  }
+  .content-box .sign {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
 }

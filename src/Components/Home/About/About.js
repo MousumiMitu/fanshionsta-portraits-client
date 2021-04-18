@@ -5,7 +5,7 @@ import profile from "../../../images/profile.jpg";
 const About = () => {
   return (
     <section className="container  profile-box">
-      <div className="d-flex justify-content-evenly">
+      <div className="about-container">
         <div className=" profile-img">
           <img src={profile} className="img-fluid" alt="" />
         </div>
