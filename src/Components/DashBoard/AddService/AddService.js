@@ -27,7 +27,8 @@ const AddService = () => {
       });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const serviceData = {
       name: service.name,
       price: service.price,

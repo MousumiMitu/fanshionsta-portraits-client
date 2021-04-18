@@ -5,6 +5,7 @@ import firebaseConfig from "./firebase.config";
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
 import logo from "../../images/logo.png";
+import jwt_decode from "jwt-decode";
 import "./Login.css";
 
 const Login = () => {
