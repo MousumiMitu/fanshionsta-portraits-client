@@ -33,7 +33,7 @@ const HeaderMain = () => {
         <div className="slider4 img-fluid" style={{ marginTop: "5rem" }}>
           <img className="slide-img" src={slide3} alt="" />
           <div className="text-box">
-            <h3 className="text-center">photography creation</h3>
+            <h3 className="text-center">Fashionista Portraits</h3>
             <span></span>
           </div>
         </div>
