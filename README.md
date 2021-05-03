@@ -1,6 +1,6 @@
 # Fashionista Portraits Complete full stack project
 
-Fashion Finds is a complete full stack product where used API data from own creating database by help of mongodb.
+Fashionista Portraits is a complete full stack product where used API data from own creating database by help of mongodb.
 
 ## What's really in there
 
